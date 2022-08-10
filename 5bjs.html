@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<body>
+<h1> string functions </h1>
+<button onclick="func()">click here !</button>
+<p id="demo"></p>
+<script>
+function func()
+{
+let num=parseInt(prompt("enter a number"));
+let res="";
+res+=Math.sin(num)+" is the sin value";
+res+="<br>";
+res+=Math.abs(num)+" is the abs value";
+res+="<br>";
+res+=Math.acos(num)+"is the acos value";
+res+="<br>";
+res+=Math.ceil(10.2)+" is the ceil value of 10.2";
+res+="<br>";
+res+=Math.max(10,11,12)+" is the max value of 10,11,12";
+res+="<br>";
+res+=Math.exp(num)+" is the exp value";
+res+="<br>";
+res+=Math.log(1)+" is the log value of 1";
+res+="<br>";
+document.getElementById("demo").innerHTML=res;
+}
+</script>
+</body>
+</html>

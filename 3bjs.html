@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<body>
+<h1> finding factorial using recursion </h1>
+<button onclick="func()"> click here ! </button>
+<p id="demo"></p>
+<script>
+function factorial(num)
+{
+if(num==0)
+{
+return 1;
+}
+else
+{
+return num*factorial(num-1);
+}
+}
+function func()
+{
+
+let num=parseInt(prompt("enter the positive number"));
+if(num>=0)
+{
+const	res = factorial(num);
+document.getElementById("demo").innerHTML="the factorial of given is:"+res;
+}
+else
+{
+document.getElementById("demo").innerHTML="invalid input";
+}
+}
+
+</script>
+</body>
+</html>

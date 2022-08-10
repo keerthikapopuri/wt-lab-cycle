@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+<h1> reversing number </h1>
+<button onclick="func()"> click here ! </button>
+<p id="demo"></p>
+<script>
+function func()
+{
+var rev = 0;
+var p = parseInt(prompt("enter the value"));
+while(p!=0)
+{
+var a = p%10;
+rev=rev*10+a;
+p=Math.floor(p/10);
+
+}
+document.getElementById("demo").innerHTML="the reverse of number is: "+rev;
+}
+</script>
+</body>
+</html>

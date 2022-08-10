@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<h1>Calculating biggest of 3 numbers</h1>
+<button onclick="func()"> click here!</button>
+<p> the biggest of 3 numbers is: </p>
+<p id="demo"> </p>
+<script>
+function func()
+{
+let big;
+let a = parseInt(prompt("enter 1st value"));
+let b = parseInt(prompt("enter 2nd value"));
+let c = parseInt(prompt("enter 3rd value"));
+if(a>b && a>c)
+{
+big=a;
+}
+else if(b>c)
+{
+big=b;
+}
+else
+{
+big=c;
+}
+document.getElementById("demo").innerHTML=big;
+}
+</script>
+</body>
+</html>

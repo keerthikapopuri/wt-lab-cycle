@@ -1,0 +1,28 @@
+<!doctype html>
+<body>
+<p> this is first p statement </p>
+<p> this is second p statement </p>
+<h2> this is a header statement </h2>
+<a href="https://www.w3schools.com/Js/js_htmldom_collections.asp"> first link </a>
+<br>
+<a href="https://www.google.com/"> second link</a>
+<br>
+<img id="d" src="C:\Users\keert\OneDrive\Desktop\New folder\img1.jpg" width=200px height=200px>
+<button onclick="func()">click here !</button>
+<p id="demo"></p>
+<script>
+function func()
+{
+var collect=document.getElementsByTagName("p");
+var i;
+for(i=0;i<collect.length;i++)
+{
+collect[i].style.color = "red";
+}
+var colle=document.getElementsByTagName("a");
+document.getElementById("demo").innerHTML=colle.length+ "is the number of anchors";
+document.getElementById("d").src="C:\\Users\\keert\\OneDrive\\Desktop\\New folder\\img2.jpg";
+}
+</script>
+</body>
+</html>

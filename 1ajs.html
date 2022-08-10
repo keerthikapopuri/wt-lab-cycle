@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<script>
+function func()
+{
+let text="";
+let p = parseInt(prompt("enter the year "));
+ if (p%4 == 0) {
+      if(p%100 == 0){
+      if(p%400 == 0){text="leap year";}
+      else{text="not leap year";}
+	}
+else {text="leap year";}
+  }
+  else{text="not leap year";}
+document.getElementById("demo").innerHTML="the given year is:"+text;
+}
+</script>
+<h1> calculating wheather leap year or not </h1>
+<button onclick="func()"> click here! </button>
+<p id="demo"></p>
+</body>
+</html>
+
+      

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img
+{ width:200px;
+height:300px;
+}
+</style>
+</head>
+<body>
+<h1> displaying random image </h1>
+<br>
+<img id="im" src="img2.jpg"></img>
+<br>
+<button onclick="func()"> click here ! </button>
+<script>
+function func()
+{
+var img_arr=["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+var p = Math.floor(Math.random()*img_arr.length);
+document.getElementById("im").src=img_arr[p];
+}
+</script>
+</body>
+</html>

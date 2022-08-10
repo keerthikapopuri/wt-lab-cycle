@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<body>
+<h1> addition & multiplication of 2 matrices</h1>
+<button onclick="func()"> click here ! </button>
+<h2> result</h2>
+<p id="demo"></p>
+<h2> a </h2>
+<p id="a1"></p>
+<h2> b </h2>
+<p id="b1"></p>
+<h2> multiplication </h2>
+<p id="mult"></p>
+<script>
+function func()
+{
+n=parseInt(prompt("enter the dimenison of array"));
+var a = new Array(n);
+var b = new Array(n);
+var c = new Array(n);
+var mul = new Array(n);
+var i,j,k;
+for(i=0;i<n;i++)
+{
+a[i]=new Array(n);
+b[i]=new Array(n);
+c[i]=new Array(n);
+mul[i]=new Array(n);
+}
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+a[i][j]=parseInt(prompt("enter the value for matrix a"));
+}}
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+b[i][j]=parseInt(prompt("enter the value for matrix b"));
+}}
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+c[i][j]=a[i][j]+b[i][j];
+}}
+for(i=0;i<n;i++)    
+{    
+for(j=0;j<n;j++)    
+{    
+mul[i][j]=0;    
+for(k=0;k<n;k++)    
+{    
+mul[i][j]+=a[i][k]*b[k][j];    
+}    
+}    
+}    
+document.getElementById("demo").innerHTML=c;
+document.getElementById("mult").innerHTML=mul;
+document.getElementById("a1").innerHTML=a;
+document.getElementById("b1").innerHTML=b;
+}
+</script>
+</body>
+</html>

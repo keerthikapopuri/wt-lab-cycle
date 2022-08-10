@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> binary search </h1>
+<button onclick="func()">click here !</button>
+<p id="demo"></p>
+<script>
+function func()
+{
+var n = parseInt(prompt("enter the size"));
+var a = new Array(n);
+var i,j,mid,high,low;
+var res_index=-1;
+for(i=0;i<n;i++)
+{
+a[i]=parseInt(prompt("enter the number"));
+}
+a.sort();
+low=0;
+high=n-1;
+var flag=1;
+var ele = parseInt(prompt("enter the value to be searched"));
+while(low<=high && flag==1)
+{
+mid=Math.floor((low+high)/2);
+if(a[mid]==ele)
+{
+res_index=mid;
+flag=0;
+}
+else if(a[mid]<ele)
+{
+low=mid+1;
+}
+else
+{
+high=mid-1;
+}
+}
+if(res_index==-1)
+{
+document.getElementById("demo").innerHTML="element not found";
+}
+else
+{
+document.getElementById("demo").innerHTML="element found at position"+(res_index+1);
+}
+}
+</script>
+</body>
+</html>
+

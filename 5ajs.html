@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<body>
+<h1> string functions </h1>
+<button onclick="func()">click here !</button>
+<p id="demo"></p>
+<script>
+function func()
+{
+let text=prompt("enter a string");
+let res="";
+res=res+text.length+" is the length of string";
+res=res+"<br>";
+res=res+text.substring(1,4)+" is the subsring from index 1 to 4";
+res=res+"<br>";
+res=res+text.toUpperCase()+" converted into upper case";
+res=res+"<br>";
+res=res+text.charAt(5)+" is the character at 5th position";
+res=res+"<br>";
+res=res+text.concat(" hi!")+" is the example of concatenation";
+res=res+"<br>";
+res=res+text.replace("hi","hello")+" is example of replace function";
+res=res+"<br>";
+document.getElementById("demo").innerHTML=res;
+}
+</script>
+</body>
+</html>

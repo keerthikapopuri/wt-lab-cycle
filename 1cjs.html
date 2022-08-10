@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+<h1> performing arithmetic operations using switch </h1>
+<button onclick="func()"> click here ! </button>
+<p id="demo"> </p>
+<script>
+function func()
+{
+let res;
+let a=parseInt(prompt("enter 1st number"));
+let b=parseInt(prompt("enter 2nd number"));
+let oper=prompt("enter operation");
+switch(oper)
+{
+case '+': res= a+b;
+break;
+case '-':res=a-b;
+break;
+case '*':res=a*b;
+break;
+case '/':res=a/b;
+break;
+default: res="invalid";
+break;
+}
+document.getElementById("demo").innerHTML="the result is: "+res;
+}
+</script>
+</body>
+</html>
